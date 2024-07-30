@@ -1,30 +1,39 @@
 # QTileWM X11 Rice
-![Config image 1](./screenshots/qtile1.png)
-![Config image 2](./screenshots/qtile2.png)
-![Config image 3](./screenshots/qtile3.png)
+
+## SCREENSHOTS
+
+### Advice
+You ***should*** ignore my wallpaper, ***it's just a picture*** I enjoy looking at, but ***it's not a reflection of who I am.***
+
+![Config image 1](./content/sc1.png)
+
+### Qtile Keymap example
+![Config image 2](./content/sc2.png)
+
+### A sneak peek of my neovim setup
+![Config image 3](./content/sc3.png)
 ## Packages
-- Qtile 
-- Alacritty 
+- Qtile (Maybe soon I will add Qtile-extras to this project)
+- Alacritty (The configuration files are in another repository)
+- xorg-xrandr (screen resolution, more info in `nano ~/.config/qtile/scripts/autostart.sh`)
 - Rofi (Will be customized in the future)
-- Picom (with glx backend)
-- Nitrogen (you must set the wallpaper manually)
-- Flameshot
-- NerdFonts (I use Iosevka Nerd Font)
-- LightDM (But I don't customize it yet, so I don't include this in the repo yet)
+- Picom-git (with glx backend, You must install it from ***AUR***)
+- Nitrogen (you must download and set the wallpaper manually)
+- NerdFonts (I use Iosevka Nerd Font `sudo pacman -S ttf-iosevkaterm-nerd ttf-nerd-fonts-symbols` but I wanna change all the icons and the Qtile bar ASAP, maybe polybar)
+- LightDM (Will be customized soon)
 
-## Installation
+## Only Qtile installation
 
-1. Clone the repository
-`git clone https://github.com/JuanZuniga7/qtile-config.git`
-2. Delete actual Qtile configuration
+1. Install Qtile and fonts from pacman
+`sudo pacman -S qtile ttf-iosevkaterm-nerd ttf-nerd-fonts-symbols`
+you can use every font you want, but you must install NerdFonts symbols
+2. Clone the repository
+`git clone https://github.com/RustedCor/RC-Qtile.git`
+3. Delete actual Qtile configuration
 `rm -rf ~/.config/qtile`
-3. Copy the configuration files to the Qtile directory
-`mv ./qtile-config ~/.config/qtile`
-4. Move Alacritty configuration file
-`mv ~/.config/qtile/others/alacritty ~/.config/`
-5. Move Picom configuration file
-`mv ~/.config/qtile/others/picom ~/.config/`
-6. Set the wallpaper with Nitrogen
+4. Copy the configuration files to the Qtile directory
+`mv ./RC-Qtile ~/.config/qtile`
+5. Set the wallpaper with Nitrogen
 `nitrogen ~/path/to/wallpaper --set-auto --save`
-7. Restart Qtile pressing `Mod + Control + R`
-8. Maybe you need to restart your computer to apply picom changes
+6. Restart Qtile pressing `Mod + Control + R`
+7. Maybe you need to restart your computer to apply picom changes, especially fonts and picom config
