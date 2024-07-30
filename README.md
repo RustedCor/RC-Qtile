@@ -13,7 +13,7 @@ You ***should*** ignore my wallpaper, ***it's just a picture*** I enjoy looking 
 ### A sneak peek of my neovim setup
 ![Config image 3](./content/sc3.png)
 ## Packages
-- Qtile (Maybe soon I will add Qtile-extras to this project)
+- Qtile (I may add Qtile-extras to this project soon)
 - Alacritty (The configuration files are in another repository)
 - xorg-xrandr (screen resolution, more info in `nano ~/.config/qtile/scripts/autostart.sh`)
 - Rofi (Will be customized in the future)
